@@ -6,7 +6,7 @@ PORT = 60500
 with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as s:
     s.bind((HOST, PORT))
     s.listen()
-    print(f"Professor, o servidor está locado em escutando em IP/PORTA {HOST}:{PORT}")
+    print(f"O servidor está locado em escutando em IP/PORTA {HOST}:{PORT}")
 
     conn, addr = s.accept()
     with conn:
